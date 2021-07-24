@@ -27,6 +27,11 @@ namespace AmbientSounds.ViewModels
             ISystemInfoProvider systemInfoProvider,
             INavigator navigator)
         {
+            if (accountManager == null)
+            {
+                return;
+
+            }
             Guard.IsNotNull(accountManager, nameof(accountManager));
             Guard.IsNotNull(telemetry, nameof(telemetry));
             Guard.IsNotNull(syncEngine, nameof(syncEngine));
