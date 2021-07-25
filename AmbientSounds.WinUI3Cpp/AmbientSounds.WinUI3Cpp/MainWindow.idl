@@ -1,0 +1,9 @@
+namespace AmbientSounds_WinUI3Cpp
+{
+    [default_interface]
+    runtimeclass MainWindow : Microsoft.UI.Xaml.Window
+    {
+        MainWindow();
+        Int32 MyProperty;
+    }
+}
